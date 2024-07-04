@@ -3,6 +3,26 @@
 {% block content %}
 
 <!-- index.html content starts here -->
+
+<!-- Callout -->
+<div class="container-fluid callout-container">
+    <div class="row">
+        <div class="col-12">
+            
+            <section class="callout jumbotron text-center">
+                <h1 class="jumbotron-header">Beauty treatments from a registered Doctor.</h1>
+                <hr class="block-divider">
+                <p class="lead">Sign up now for our monthly news letter about leading treatments to start your
+                    beautification journey today!<br><strong><mark> And your first botox treatment is half
+                            price!</mark></strong><s>£200</s> £100</p>
+                <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#signUpModal">Sign
+                    up</button>
+            </section>
+        </div>
+    </div>
+</div>
+<!-- /.callout -->
+
 <div class="container-fluid">
     <div class="row">
 
@@ -18,7 +38,7 @@
                                     
                                 </div>
                             </div>
-                            <a href="#" class="post-link">
+                            <a href="{% url 'treatment_detail' treatment.slug %}" class="treatment-link">
                                 <h2 class="card-title">{{ treatment.title }}</h2>
                                 <p class="card-text">{{ treatment.excerpt }}</p>
                             </a>

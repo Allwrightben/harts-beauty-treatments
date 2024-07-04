@@ -9,7 +9,7 @@ class Treatment(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
     content = models.TextField()
     excerpt = models.TextField(blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
+    price = models.IntegerField()
     status = models.IntegerField(choices=STATUS, default=0)
 
     def __str__(self):

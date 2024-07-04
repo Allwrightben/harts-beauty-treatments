@@ -2,6 +2,39 @@ body {
     background-color: #F9FAFC;
 }
 
+.callout-container {
+    height: 60vh;
+
+    background: url("../images/doctor.jpeg") no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-divider {
+    width: 175px;
+    height: 5px;
+    border: 0;
+    background-color: #DC3545;
+}
+
+.jumbotron {
+    background-color: transparent;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    padding: 100px 0;
+}
+
+.jumbotron-header {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -56,12 +89,6 @@ body {
     height: auto;
 }
 
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
-}
-
 .masthead {
     margin-top: 10px;
     overflow: hidden;
@@ -72,7 +99,7 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: pink;
     color: white;
     position: relative;
 }
@@ -89,14 +116,14 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: pink;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
     z-index: 100;
 }
 
-.post-link {
+.treatment-link {
     text-decoration: none;
     color: #445261;
 }
@@ -104,6 +131,8 @@ body {
 .post-link:hover,
 .page-link {
     color: #E84610;
+    background-color: ivory;
+    border-radius: 50px;
 }
 
 .post-title {

@@ -17,6 +17,12 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+    <!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="{% static 'apple-touch-icon.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon-32x32.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon-16x16.png' %}">
+<link rel="manifest" href="{% static 'site.webmanifest' %}">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -44,7 +50,9 @@
                     </li>
 
                 </ul>
-                <div class="d-none d-md-block">
+                <p class="me-3 mb-0">Book a free video consultation</p>
+                <div class="d-none d-md-block d-flex">
+                    
                     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#newsletterModal">
                         Book Online
                     </button>
@@ -52,24 +60,6 @@
             </div>
         </div>
     </nav>
-
-    <!-- Callout -->
-    <div class="container-fluid callout-container">
-        <div class="row">
-            <div class="col-12">
-                <section class="callout jumbotron text-center">
-                    <h1 class="jumbotron-header">Beauty treatments from a registered Doctor.</h1>
-                    <hr class="block-divider">
-                    <p class="lead">Sign up now for our monthly news letter about leading treatments to start your
-                        beautification journey today!<br><strong><mark> And your first botox treatment is half
-                                price!</mark></strong><s>£300</s> £150</p>
-                    <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#signUpModal">Sign
-                        up</button>
-                </section>
-            </div>
-        </div>
-    </div>
-    <!-- /.callout -->
 
     <main class="flex-shrink-0 main-bg">
 

@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+
+<div class="masthead">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-6 masthead-text">
+                
+                <h1 class="post-title">{{ treatment.title }}</h1>
+                
+            </div>
+            <div class="d-none d-md-block col-md-6 masthead-image">
+                <img src="{% static 'images/botox.jpg' %}" class="scale" alt="placeholder">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container brand">
+    <div class="row">
+        <div class="col card mb-4  mt-3 left  top">
+            <div class="card-body">
+                <p class="card-text">
+                    {{ treatment.content | safe }}
+                </p>
+                <p class="card-text">
+                    From: £{{ treatment.price }}
+                    <a href="your-link-url" class="btn btn-danger">Book a free video consultation</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
