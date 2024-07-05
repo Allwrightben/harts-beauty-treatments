@@ -67,7 +67,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     color: ivory;
-    background-color: #dc3545;
+    background-color: green;
     padding-left: 10px;
     border-radius: 5%;
 }
@@ -81,7 +81,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #188181;
+    background-color: #c3e5c7;
 }
 
 .scale {
