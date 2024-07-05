@@ -5,7 +5,7 @@ body {
 .callout-container {
     height: 60vh;
 
-    background: url("../images/doctor.jpeg") no-repeat top center fixed;
+    background: url("{% static 'images/doctor.jpeg' %}") no-repeat top center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
