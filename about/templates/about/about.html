@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-4 text-center">
+            <img src="{% static 'images/doctor3.jpg' %}" class="img-fluid" alt="close up Doctor Image" />
+        </div>
+        <div class="col-12 col-md-8 about">
+            <h2>{{ about.name }}</h2>
+            <p class="about-content">{{ about.professional | safe }}</p>
+            <p class="about-content">{{ about.personal | safe }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-right">
+            <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+        </div>
+    </div>
+</div>
+{% endblock content %}

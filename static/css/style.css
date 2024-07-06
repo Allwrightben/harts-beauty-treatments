@@ -71,7 +71,7 @@ body {
 }
 
 .card-title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: ivory;
     background-color: pink;
@@ -188,4 +188,15 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+.about {
+    background-color: pink;
+}
+
+.about-content {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 5%;
 }
