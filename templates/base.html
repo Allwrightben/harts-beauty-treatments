@@ -82,12 +82,12 @@
                 {% if user.is_authenticated %}
                 <p class="me-3 mb-0"><strong>Welcome, {{ user }}</strong></p>
                 {% else %}
-                <p class="me-3 mb-0">Book a free video consultation</p>
+                <p class="me-3 mb-0">Book a free Video consultation</p>
                 {% endif %}
 
                 {% if user.is_authenticated %}
                 <div class="d-none d-md-block d-flex">
-                    <a href="{% url 'bookings' %}" class="btn btn-danger">Book Online</a>
+                    <a href="{% url 'bookings' %}" class="btn btn-danger">Book Consultation</a>
                 </div>
                 {% else %}
                 <div class="d-none d-md-block d-flex">

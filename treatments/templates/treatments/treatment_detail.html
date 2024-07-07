@@ -26,7 +26,7 @@
                 </p>
                 {% if user.is_authenticated %}
                 <div class="d-none d-md-block d-flex">
-                    <a href="your-link-url" class="btn btn-danger">Book Free Video Consultation</a>
+                    <a href="{% url 'bookings' %}" class="btn btn-danger">Book a free consultation</a>
                 </div>
                 {% else %}
                 <div class="d-none d-md-block d-flex">

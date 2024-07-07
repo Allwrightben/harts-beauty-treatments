@@ -4,9 +4,15 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8 mt-3">
-            <h2 class="text-center mb-4">Select Your Appointment</h2>
+            <p><strong>Please note:</strong> it is our policy to have a brief video consultation 
+                to answer any questions you may have and ensure to correct treatment for you. If you 
+                are happy after the consultation, the treatment can be book in that same call</p>
+            <h2 class="text-center mb-4">Select a time for your video call</h2>
             <form method="post" action="{% url 'book_appointment' %}" class="needs-validation" novalidate>
                 {% csrf_token %}
+                
+                <p><strong>Username:</strong> {{ user }}</p>
+                <p><strong>Email:</strong> {{ user.email }}</p>
 
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
@@ -29,6 +35,7 @@
 
                 <div class="mb-3">
                     <label for="time_slot" class="form-label">Time Slot</label>
+                    <p><small><em>We allow for 45 minutes but the call is usually 20-30 minites.</em></small></p>
                     <select class="form-select" name="time_slot" required>
                         {% for choice in time_slots %}
                             <option value="{{ choice.0 }}">{{ choice.1 }}</option>
@@ -47,6 +54,7 @@
                 </div>
 
                 <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
+
             </form>
         </div>
     </div>
