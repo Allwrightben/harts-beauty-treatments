@@ -1,30 +1,54 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Select Your Appointment</h2>
-<form method="post" action="{% url 'book_appointment' %}">
-    {% csrf_token %}
-    <select name="treatment">
-        {% for choice in treatments %}
-        <option value="{{ choice.0 }}">{{ choice.1 }}</option>
-        {% endfor %}
-    </select>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 mt-3">
+            <h2 class="text-center mb-4">Select Your Appointment</h2>
+            <form method="post" action="{% url 'book_appointment' %}" class="needs-validation" novalidate>
+                {% csrf_token %}
 
-    <select name="time_slot">
-        {% for choice in time_slots %}
-        <option value="{{ choice.0 }}">{{ choice.1 }}</option>
-        {% endfor %}
-    </select>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="treatment" class="form-label">Treatment</label>
+                    <select class="form-select" name="treatment" required>
+                        {% for choice in treatments %}
+                            <option value="{{ choice.0 }}">{{ choice.1 }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
 
-    <input type="date" name="date">
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" class="form-control" name="date" required>
+                </div>
 
-    <!-- Added Phone Number Input -->
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                <div class="mb-3">
+                    <label for="time_slot" class="form-label">Time Slot</label>
+                    <select class="form-select" name="time_slot" required>
+                        {% for choice in time_slots %}
+                            <option value="{{ choice.0 }}">{{ choice.1 }}</option>
+                        {% endfor %}
+                    </select>
+                </div>                
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone number" required>
+                </div>
 
-    <button type="submit">Book Appointment</button>
-</form>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}

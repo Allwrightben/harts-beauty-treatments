@@ -14,10 +14,12 @@ def book_appointment(request):
         time_slot = request.POST['time_slot']
         date = request.POST['date']
         message = request.POST['message']
+        name = request.POST['name']
         
         # Create a new booking
         Booking.objects.create(
             user=request.user,
+            name=name,
             email=request.user.email,
             phone=request.POST['phone'],
             treatment=treatment,
@@ -33,3 +35,4 @@ def book_appointment(request):
 
 def booking_confirmation(request):
     return render(request, 'booking_confirmation.html')
+

@@ -5,9 +5,9 @@ from .models import Booking
 
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
-    list_display = ('user', 'email', 'phone', 'treatment', 'date', 'time', 'message', 'created_at')
+    list_display = ('user', 'name', 'email', 'phone', 'treatment', 'date', 'time', 'message', 'created_at')
     list_filter = ('treatment', 'date', 'time', 'created_at')
     search_fields = ('user', 'email', 'phone', 'treatment', 'date', 'time', 'message', 'created_at')
     date_hierarchy = 'created_at'
-    ordering = ('created_at',)
+    ordering = ('-created_at',)
 

@@ -2,9 +2,13 @@
 
 {% block content %}
 
-
-<h2>Your appointment has been booked!</h2>
-<p>Thank you for booking your appointment.</p>
-<a href="{% url 'bookings' %}">Book another appointment?</a>
-
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2"></div>
+        <h2>Thank you {{ user }}, your appointment has been booked!</h2>
+        <p>We'll be in touch shortly to confrim your appointment.</p>
+        <a href="{% url 'bookings' %}">Book another appointment?</a>
+    </div>
+</div>
+</div>
 {% endblock %}
