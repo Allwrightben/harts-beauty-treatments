@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Select Your Appointment</h2>
+<form method="post" action="{% url 'book_appointment' %}">
+    {% csrf_token %}
+    <select name="treatment">
+        {% for choice in treatments %}
+        <option value="{{ choice.0 }}">{{ choice.1 }}</option>
+        {% endfor %}
+    </select>
+
+    <select name="time_slot">
+        {% for choice in time_slots %}
+        <option value="{{ choice.0 }}">{{ choice.1 }}</option>
+        {% endfor %}
+    </select>
+
+    <input type="date" name="date">
+
+    <!-- Added Phone Number Input -->
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+    <button type="submit">Book Appointment</button>
+</form>
+{% endblock %}
