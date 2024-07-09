@@ -14,7 +14,6 @@ TIME_SLOTS = (
 )
 
 TREATMENTS = (
-    (-1, 'Select a treatment'),
     (0, 'Botox Therapy(chronic pain relief)'),
     (1, 'Botox Treatment (wrinkle reduction/prevention)'),
     (2, 'Chemical Peel (skin rejuvenation)'),
@@ -31,7 +30,7 @@ class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=100, default="Your Name")
     email = models.EmailField()
-    phone = models.CharField(max_length=15)
+    phone = models.IntegerField()
     treatment = models.IntegerField(choices=TREATMENTS)
     date = models.DateField()
     time = models.IntegerField(choices=TIME_SLOTS)

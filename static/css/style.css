@@ -200,3 +200,17 @@ body {
     font-weight: 400;
     margin: 5%;
 }
+
+.footer {
+    background: linear-gradient(145deg, #000428, #004e92);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer p {
+    margin-bottom: 10px;
+}
+.footer i:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
