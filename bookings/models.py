@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import MaxLengthValidator, MinLengthValidator
 
 # Time slots
 TIME_SLOTS = (
@@ -30,7 +31,7 @@ class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=100, default="Your Name")
     email = models.EmailField()
-    phone = models.IntegerField()
+    phone = models.CharField(validators=[MaxLengthValidator(15), MinLengthValidator(10)])
     treatment = models.IntegerField(choices=TREATMENTS)
     date = models.DateField()
     time = models.IntegerField(choices=TIME_SLOTS)

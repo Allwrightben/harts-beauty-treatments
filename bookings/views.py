@@ -1,7 +1,8 @@
-from django.shortcuts import render, redirect, HttpResponseRedirect
+from django.shortcuts import render, redirect, HttpResponseRedirect, get_object_or_404
 from django.urls import reverse
 from .models import Booking, TREATMENTS, TIME_SLOTS
 from django.contrib.auth.decorators import login_required
+from django import forms
 import datetime
 
 @login_required
@@ -28,7 +29,7 @@ def book_appointment(request):
             treatment = int(request.POST['treatment'])
             time_slot = int(request.POST['time_slot'])
             date = datetime.datetime.strptime(request.POST['date'], '%Y-%m-%d').date()
-            phone = int(request.POST['phone'])
+            phone = (request.POST['phone'])
         except ValueError:
             # Handle invalid input
             return HttpResponseRedirect(reverse('bookings') + '?error=Invalid%20input%20provided.')
@@ -38,7 +39,7 @@ def book_appointment(request):
             user=request.user,
             name=request.POST['name'],
             email=request.user.email,
-            phone=request.POST['phone'],
+            phone=phone,
             treatment=treatment,
             date=date,
             time=time_slot,
@@ -53,3 +54,48 @@ def book_appointment(request):
 def booking_confirmation(request):
     return render(request, 'booking_confirmation.html')
 
+
+# View to display all bookings made by the current user
+@login_required
+def my_bookings(request):
+    bookings = Booking.objects.filter(user=request.user)
+    return render(request, 'my_bookings.html', {'bookings': bookings})
+
+
+# allows the user to edit a booking
+class BookingForm(forms.ModelForm):
+    class Meta:
+        model = Booking
+        fields = ['name', 'email', 'phone', 'treatment', 'date', 'time', 'message']
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['name'].initial = self.instance.name
+        self.fields['email'].initial = self.instance.email
+        self.fields['phone'].initial = self.instance.phone
+        self.fields['treatment'].initial = self.instance.treatment
+        self.fields['date'].initial = self.instance.date
+        self.fields['time'].initial = self.instance.time
+        self.fields['message'].initial = self.instance.message
+
+
+@login_required
+def edit_booking(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id, user=request.user)
+    
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            return redirect('my_bookings')
+    else:
+        form = BookingForm(instance=booking)
+    
+    return render(request, 'edit_booking.html', {'booking': booking, 'form': form})
+
+# allows the user to delete a booking
+@login_required
+def delete_booking(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id, user=request.user)
+    booking.delete()
+    return redirect('my_bookings')
