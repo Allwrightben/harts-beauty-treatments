@@ -5,9 +5,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8 mt-3">
             <p><strong>Please note:</strong> it is our policy to have a brief video consultation 
-                to answer any questions you may have and ensure to correct treatment for you. If you 
-                are happy after the consultation, the treatment can be book in that same call</p>
-            <h2 class="text-center mb-4">Select a time for your video call</h2>
+                to answer any questions you may have and ensure the correct treatment for you. If you 
+                are happy after the consultation, the treatment can be booked in that same call</p>
+            
+                <h2 class="text-center mb-4">Select a time for your video call.</h2>
+            
             <form method="post" action="{% url 'book_appointment' %}" class="needs-validation" novalidate>
                 {% csrf_token %}
                 

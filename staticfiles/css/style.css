@@ -1,11 +1,12 @@
 body {
     background-color: #F9FAFC;
     font-family: "Roboto", sans-serif;
+    
 }
 
 .callout-container {
     position: relative;
-    height: 60vh;
+    height: 100vh;
 }
 
 .callout .img-fluid {
@@ -28,13 +29,6 @@ body {
     color: white;
     z-index: 2;
     text-shadow: 2px 2px 5px black;
-}
-
-.block-divider {
-    width: 175px;
-    height: 5px;
-    border: 0;
-    background-color: #DC3545;
 }
 
 .jumbotron-header {
@@ -74,7 +68,7 @@ body {
     font-size: 1.6rem;
     font-weight: 700;
     color: ivory;
-    background-color: pink;
+    background-color: linear-gradient(145deg, #dc3545, green);
     padding-left: 10px;
     border-radius: 5%;
 }
@@ -199,4 +193,18 @@ body {
     font-size: 1.2rem;
     font-weight: 400;
     margin: 5%;
+}
+
+.footer {
+    background: linear-gradient(145deg, #dc3545, pink);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer p {
+    margin-bottom: 10px;
+}
+.footer i:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
 }
