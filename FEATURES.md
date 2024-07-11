@@ -39,11 +39,11 @@ Navbar has the following links:
 - register page
 - login page
 
-![Navbar links](documentation/features/navbarlinksnotlogged.PNG)
+![Navbar links when not logged in](documentation/features/navbarlinksnotlogged.PNG)
 
 - The navbar also has a book online button that will direct the user to login or create an account if they are not logged in, but will take them to the booking page if they are logged in.
 
-![Navbar links](documentation/features/bookonline.PNG)
+![Navbar Button](documentation/features/bookonline.PNG)
 
 - on mobile the navbar menu becomes a button
 

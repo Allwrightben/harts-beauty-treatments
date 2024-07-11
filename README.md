@@ -160,7 +160,7 @@ Please refer to the [TESTING.md](TESTING.md) file for all test-related documenta
 
 
 - The app was deployed to [Heroku](https://www.heroku.com/).
-- The database was deployed to [SQL](https://dbs.ci-dbs.net/).
+- The database was deployed to [](https://dbs.ci-dbs.net/).
 
 - The app can be reached by the [link](https://cool-school.onrender.com).
 
