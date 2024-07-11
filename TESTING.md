@@ -48,4 +48,50 @@ Usability was tested with the below user acceptance testing, sent to new users t
 1           | Click on a "Back" in home page | Displays the Previous 3 treatments in the list | Y | Available to everyone |
 
 
-## Compatability
+## Compatibility
+
+Testing was conducted on the following browsers;
+
+- Edge;
+- Chrome;
+
+[Compatibility Report](documentation/compatibility/compatibility.pdf)
+
+## Validation:
+
+### HTML Validation:
+
+- [Full HTML Validation Report](documentation/validation/html_validation.pdf)
+
+- No errors or warnings were found when passing through the official [W3C](https://validator.w3.org/) validator. This checking was done manually by copying the view page source code (Ctrl+U) and pasting it into the validator.
+
+### CSS Validation:
+
+- [Full CSS Validation Report](documentation/validation/css_validation.png)
+
+- No errors or warnings were found when passing through the official [W3C (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_uri) validator except for the warnings about the use of css root variables and webkits for the box-shadow. However, css code works perfectly on various devices.
+
+### Python Validation:
+
+- [Full Python Validation Report](documentation/validation/python_validation.pdf)
+
+- No errors were found when the code was passed through Valentin Bryukhanov's [online validation tool](http://pep8online.com/). According to the reports, the code is [Pep 8-compliant](https://legacy.python.org/dev/peps/pep-0008/). This checking was done manually by copying python code and pasting it into the validator.
+
+
+## Lighthouse Report
+
+![Lighthouse Report. Home Page](documentation/lighthouse_reports/lighthouse_home.png)
+
+### Login Page
+
+![Lighthouse Report. Login Page](documentation/lighthouse_reports/lighthouse_signin.png)
+
+### Logout Page
+
+![Lighthouse Report. Logout Page](documentation/lighthouse_reports/lighthouse_logout.png)
+
+# Responsiveness
+
+The responsiveness was checked manually by using devtools (Chrome) throughout the whole development. It was also checked with [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb/related?hl=en) Chrome extension.
+
+[Responsiveness Report](documentation/responsiveness/responsiveness.pdf)
