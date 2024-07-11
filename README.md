@@ -58,6 +58,7 @@ confirm their appointment with a medical professional.
 
 - ### Databases:
     + [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/): The database used to store all the data.
+    + [SQLite](https://www.sqlite.org/): was used as a development database.
 
 - ### Other tools:
 
@@ -65,8 +66,6 @@ confirm their appointment with a medical professional.
     + [Pip3](https://pypi.org/project/pip/): the package manager used to install the dependencies.
     + [Gunicorn](https://gunicorn.org/): the webserver used to run the website.
     + [Django-allauth](https://django-allauth.readthedocs.io/en/latest/): the authentication library used to create the user accounts.
-    + [Render](https://render.com/): the cloud platform used to host the website.
-    + [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/): the cloud database used to store all the data.
     + [GitHub](https://github.com/): used to host the website's source code.
     + [VSCode](https://code.visualstudio.com/): the IDE used to develop the website.
     + [Chrome DevTools](https://developer.chrome.com/docs/devtools/open/): was used to debug the website.
@@ -102,9 +101,9 @@ All images were taken from [Unsplash](https://unsplash.com/) free section.
 
 ### Entity-Relationship Diagram
 
-* The ERD was created using [Draw.io](https://www.lucidchart.com/).
+* The ERD was created using [lucidchart](https://www.lucidchart.com/).
 
-![ERD](documentation/diagrams/erd.png)
+![ERD](documentation/diagrams/erd1.PNG)
 
 ### Data Modeling
 
