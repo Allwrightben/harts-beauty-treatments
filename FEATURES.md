@@ -30,7 +30,7 @@ Web application has the following pages:
 
 **Navbar**
 
-![Navbar](documentation/features/navbarnotlogged.png)
+![Navbar](documentation/features/navbarnotlogged.PNG)
 
 Navbar has the following links:
 - logo (home page)
@@ -39,19 +39,19 @@ Navbar has the following links:
 - register page
 - login page
 
-![Navbar links](documentation/features/navbarlinksnotlogged.png)
+![Navbar links](documentation/features/navbarlinksnotlogged.PNG)
 
 - The navbar also has a book online button that will direct the user to login or create an account if they are not logged in, but will take them to the booking page if they are logged in.
 
-![Navbar links](documentation/features/bookonline.png)
+![Navbar links](documentation/features/bookonline.PNG)
 
 - on mobile the navbar menu becomes a button
 
-![Navbar links](documentation/features/mainpagemobile.png)
+![Navbar links](documentation/features/mainpagemobile.PNG)
 
 - The menu button openn up like this
 
-![Navbar links](documentation/features/mainpagebuttonopen.png)
+![Navbar links](documentation/features/mainpagebuttonopen.PNG)
 
 
 
@@ -61,11 +61,11 @@ Navbar has the following links:
 - my bookings
 - book consultation
 
-![Navbar links](documentation/features/navbarloggedin.png)
+![Navbar links](documentation/features/navbarloggedin.PNG)
 
 **Footer**
 
-![Footer](documentation/features/footer.png)
+![Footer](documentation/features/footer.PNG)
 
 Footer has the following sections:
 - copytight
@@ -75,41 +75,41 @@ Footer has the following sections:
 
 For the mobile version of the website, the footer looks as follows:
 
-  ![Footer Mobile](documentation/features/footermobile.png)
+  ![Footer Mobile](documentation/features/footermobile.PNG)
 
 **Home page**
 
   - The home page features a large image of a clinic with a central message
 
-  ![Home Page](documentation/features/mainpage2.png)
+  ![Home Page](documentation/features/mainpage2.PNG)
 
   - at the bottom of the home page is a paginated list of available treatments
 
-  ![Treatment List](documentation/features/treatmentlist.png)
+  ![Treatment List](documentation/features/treatmentlist.PNG)
 
 **About**
 
 - About page feature information about the site owner
 
-![About Page](documentation/features/aboutpage.png)
+![About Page](documentation/features/aboutpage.PNG)
 
 **Signup page**
 
 - The sign up page features the options to login or signup requiring username, email and password
 
-![Signup Page](documentation/features/signup.png)
+![Signup Page](documentation/features/signup.PNG)
 
 **Login page**
 
 - The login page features the option to login requiring username and password
 
-![Login Page](documentation/features/login.png)
+![Login Page](documentation/features/login.PNG)
 
 **Logout page**
 
 - The logout page features the option to logout
 
-![Logout Page](documentation/features/logout.png)
+![Logout Page](documentation/features/logout.PNG)
 
 **Make a booking page**
 
@@ -121,22 +121,32 @@ For the mobile version of the website, the footer looks as follows:
   - Phone number
   - Message (optional)
 
-![Booking Page](documentation/features/makebooking.png)
+![Booking Page](documentation/features/makebooking.PNG)
 
 **Booking confirmation page**
 
 - The booking confirmation page features a success message for the user and a link to see their bookings.
 
-![Booking Page](documentation/features/bookingconfirmation.png)
+![Booking Page](documentation/features/bookingconfirmation.PNG)
 
 **My booking page**
 
 - The my bookings page features:
-  - A table with all the bookings for the login in user
+  - A table with all the bookings for the logged in user
   - an option to edit their booking
   - an opttion to delete their booking
 
-![Booking Page](documentation/features/.png)
+![My Booking Page](documentation/features/mybookings.PNG)
+
+**Edit my booking page**
+
+- The Edit my booking page gives users the ability to change the details of their booking.
+
+![Edit My Booking Page](documentation/features/editmybooking.PNG)
+
+
+
+
 
 
 
