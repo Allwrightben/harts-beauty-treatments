@@ -3,6 +3,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+i {
+    color: #DC3545;
+}
+
 .callout-container {
     position: relative;
     height: 60vh;
@@ -25,16 +29,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: gray;
+    color: #dc3545;
     z-index: 2;
     text-shadow: 2px 2px 5px whitesmoke;
-}
-
-.block-divider {
-    width: 175px;
-    height: 5px;
-    border: 0;
-    background-color: #DC3545;
 }
 
 .jumbotron-header {

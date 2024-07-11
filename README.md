@@ -6,7 +6,7 @@ Repository: [GitHub Repo](https://github.com/Allwrightben/harts-beauty-treatment
 
 The app is developed by [Ben Allwright](https://github.com/Allwrightben).
 
-![Dr Harts Beauty](documentation/features/mainpage1.PNG)
+![Dr Harts Beauty](documentation/features/mainpage2.PNG)
 
 ## About
 

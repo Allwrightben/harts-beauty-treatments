@@ -8,46 +8,48 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12">
-            <table class="table table-striped table-bordered">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Date</th>
-                        <th>Time Slot</th>
-                        <th>Treatment</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for booking in bookings %}
-                    <tr>
-                        <td>{{ booking.date }}</td>
-                        <td>{{ booking.get_time_display }}</td>
-                        <td>{{ booking.get_treatment_display }}</td>
-                        <td>{{ booking.name }}</td>
-                        <td>{{ booking.email }}</td>
-                        <td>{{ booking.phone }}</td>
-                        <td>
-                            <a href="{% url 'edit_booking' booking.id %}" class="btn btn-warning">Edit</a> |
-                            <a href="{% url 'delete_booking' booking.id %}" class="btn btn-danger">Delete</a>
-                        </td>
-                    </tr>
-                    {% empty %}
-                    <tr>
-                        <td colspan="7">No bookings found.</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Date</th>
+                            <th>Time Slot</th>
+                            <th>Treatment</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for booking in bookings %}
+                        <tr>
+                            <td>{{ booking.date }}</td>
+                            <td>{{ booking.get_time_display }}</td>
+                            <td>{{ booking.get_treatment_display }}</td>
+                            <td>{{ booking.name }}</td>
+                            <td>{{ booking.email }}</td>
+                            <td>{{ booking.phone }}</td>
+                            <td>
+                                <a href="{% url 'edit_booking' booking.id %}" class="btn btn-warning btn-sm">Edit</a>
+                                <a href="{% url 'delete_booking' booking.id %}" class="btn btn-danger btn-sm">Delete</a>
+                            </td>
+                        </tr>
+                        {% empty %}
+                        <tr>
+                            <td colspan="7">No bookings found.</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
 
-<p>Your Booking(s) will show here. Haven't made one yet or want to add another?</p>
-<div class="d-none d-md-block d-flex">
+<p class="text-center">Your Booking(s) will show here. Haven't made one yet or want to add another?</p>
+<div class="text-center my-3">
     <a href="{% url 'bookings' %}" class="btn btn-danger">Add booking</a>
 </div>
 {% endblock %}
