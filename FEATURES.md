@@ -1,4 +1,4 @@
-# Cool School
+# Harts Beauty
 
 ## Features
 
@@ -110,6 +110,36 @@ For the mobile version of the website, the footer looks as follows:
 - The logout page features the option to logout
 
 ![Logout Page](documentation/features/logout.png)
+
+**Make a booking page**
+
+- The Booking page features a form to create a booking. User needs to enter:
+  - Full name
+  - Treatment (Choice)
+  - Date (Choice)
+  - Time (Choice)
+  - Phone number
+  - Message (optional)
+
+![Booking Page](documentation/features/makebooking.png)
+
+**Booking confirmation page**
+
+- The booking confirmation page features a success message for the user and a link to see their bookings.
+
+![Booking Page](documentation/features/bookingconfirmation.png)
+
+**My booking page**
+
+- The my bookings page features:
+  - A table with all the bookings for the login in user
+  - an option to edit their booking
+  - an opttion to delete their booking
+
+![Booking Page](documentation/features/.png)
+
+
+
 
 
 
