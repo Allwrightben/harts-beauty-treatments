@@ -12,6 +12,13 @@ The app is developed by [Ben Allwright](https://github.com/Allwrightben).
 
 [Dr Harts Beauty](https://beauty-treatments-2d7074a7a100.herokuapp.com) is a web app that gives information about the various treatments that Dr Hart can provide. The main goal of the app is to give site visitors the ability to browse treatments and encourage them to book a video consultation with the view to booking an actual treatment. Site vistors can create an account, book video appoinments and view, edit and delete their appointments.
 
+## Future Improvments
+
+#### While the website does what it is supposed to do, there are a number of features that I would have liked to develop with this project given the time but alas, time was not on my side.
+- An "Are you sure" confirmation message and additional button when the user clicks on "Delete" when looking at My Bookings.
+- General improvements to the UX and UI. A future improvement would be nicer spacing and styles across the site.
+- The sign up, make booking and edit booking forms could look and run better with further development.
+
 ## User Experience Design
 
 ### Strategy
@@ -55,6 +62,7 @@ confirm their appointment with a medical professional.
 - ### Frameworks and libraries:
 
     + [Django](https://www.djangoproject.com/): python framework used to create all the logic.
+    + [Bootstrap](https://getbootstrap.com/): Python library was used to style the html.
 
 - ### Databases:
     + [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/): The database used to store all the data.
