@@ -23,7 +23,7 @@
                 
                 <div class="mb-3">
                     <label for="treatment" class="form-label">Treatment</label>
-                    <select class="form-select" name="treatment" required>
+                    <select class="form-select" id="treatment" name="treatment">
                         {% for choice in treatments %}
                             <option value="{{ choice.0 }}">{{ choice.1 }}</option>
                         {% endfor %}
@@ -32,13 +32,13 @@
 
                 <div class="mb-3">
                     <label for="date" class="form-label">Date</label>
-                    <input type="date" class="form-control" name="date" required>
+                    <input type="date" class="form-control" id="date" name="date">
                 </div>
 
                 <div class="mb-3">
                     <label for="time_slot" class="form-label">Time Slot</label>
                     <p><small><em>We allow for 45 minutes but the call is usually 20-30 minites.</em></small></p>
-                    <select class="form-select" name="time_slot" required>
+                    <select class="form-select" id="time_slot" name="time_slot">
                         {% for choice in time_slots %}
                             <option value="{{ choice.0 }}">{{ choice.1 }}</option>
                         {% endfor %}

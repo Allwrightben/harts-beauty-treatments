@@ -1,9 +1,7 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-
-{% load static %}
-<!-- index.html content starts here -->
 
 <!-- Callout -->
 <div class="container-fluid callout-container">
@@ -13,7 +11,8 @@
                 <img src="{% static 'images/clinic.jpg' %}" class="img-fluid scale" alt="Doctor Image">
                 <div class="callout-content">
                     <h1 class="jumbotron-header">Beauty treatments from a registered Doctor.</h1>
-                    <p class="lead"><strong>Start your beautification journey today!<br>Your first botox treatment is half-price! <s>£200</s> £100</strong></p>
+                    <p class="lead"><strong>Start your beautification journey today!<br>Your first botox treatment is
+                            half-price! <s>£200</s> £100</strong></p>
                 </div>
             </section>
         </div>
@@ -33,16 +32,14 @@
                         <div class="card-body">
                             <div class="image-container">
                                 <div class="image-flash">
-                                    
+
                                 </div>
                             </div>
                             <a href="{% url 'treatment_detail' treatment.slug %}" class="treatment-link">
                                 <h2 class="card-title">{{ treatment.title }}</h2>
                                 <p class="card-text">{{ treatment.excerpt }}</p>
                             </a>
-                            
-                            <hr />
-                            </p>
+                            <hr>
                         </div>
                     </div>
                 </div>
@@ -64,7 +61,7 @@
             {% if page_obj.has_next %}
             <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
             {% endif %}
-        
+
         </ul>
     </nav>
     {% endif %}
