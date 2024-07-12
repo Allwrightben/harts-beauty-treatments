@@ -1,9 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+# status options as choices for treatments so site owner can choose to publish or keep as draft
 STATUS = ((0, "Draft"), (1, "Published"))
 
-# Create your models here.
+# Treatment model which will map to a database table
 class Treatment(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)

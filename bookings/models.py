@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MaxLengthValidator, MinLengthValidator
 
-# Time slots
+# Time slots as choices for bokking times
 TIME_SLOTS = (
     (0, '9:00-9:45'),
     (1, '10:00-10:45'),
@@ -14,6 +14,7 @@ TIME_SLOTS = (
     (7, '18:00-18:45'),
 )
 
+# treatment options as choices for booking treatments
 TREATMENTS = (
     (0, 'Botox Therapy(chronic pain relief)'),
     (1, 'Botox Treatment (wrinkle reduction/prevention)'),
@@ -26,7 +27,7 @@ TREATMENTS = (
     (8, 'Wrinkle softening injections'),
 )
 
-# Booking model
+# Booking model which will map to a database table
 class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=100, default="Your Name")
