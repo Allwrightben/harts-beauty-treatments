@@ -55,8 +55,6 @@ Testing was conducted on the following browsers;
 - Edge;
 - Chrome;
 
-[Compatibility Report](documentation/compatibility/compatibility.pdf)
-
 ## Validation:
 
 ### HTML Validation:
@@ -80,18 +78,58 @@ Testing was conducted on the following browsers;
 
 ## Lighthouse Report
 
-![Lighthouse Report. Home Page](documentation/lighthouse_reports/lighthouse_home.png)
+### Home Page
 
-### Login Page
+![Lighthouse Report. Home Page](documentation/lighthouse_reports/mainpage.PNG)
 
-![Lighthouse Report. Login Page](documentation/lighthouse_reports/lighthouse_signin.png)
+### About Page
 
-### Logout Page
+![Lighthouse Report. ABout Page](documentation/lighthouse_reports/about.PNG)
 
-![Lighthouse Report. Logout Page](documentation/lighthouse_reports/lighthouse_logout.png)
+### login Page
+
+![Lighthouse Report. Login Page](documentation/lighthouse_reports/login.PNG)
+
+### Make Booking Page
+
+![Lighthouse Report. Bookings Page](documentation/lighthouse_reports/bookings.PNG)
+
+### My Bookings Page
+
+![Lighthouse Report. My Bookings Page](documentation/lighthouse_reports/mybookings.PNG)
 
 # Responsiveness
 
-The responsiveness was checked manually by using devtools (Chrome) throughout the whole development. It was also checked with [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb/related?hl=en) Chrome extension.
+The responsiveness was checked manually by using devtools (Chrome and Edge) throughout the whole development. It was also checked with [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb/related?hl=en) Chrome extension.
 
-[Responsiveness Report](documentation/responsiveness/responsiveness.pdf)
+### Responsive Viewer Home page
+
+![Responsive viewer Home Page](documentation/responsiveness/rvhome.PNG)
+
+### Responsive Viewer About page
+
+![Responsive viewer About Page](documentation/responsiveness/rvabout.PNG)
+
+### Responsive Viewer Make bookings page
+
+![Responsive viewer Make Bookings Page](documentation/responsiveness/rvmakebooking.PNG)
+
+### Chrome Dev Tools mobile
+
+![Chrome Dev Tools Main mobile](documentation/responsiveness/chromemain.PNG)
+
+### Chrome Dev Tools Tablet
+
+![Chrome Dev Tools Main Tablet](documentation/responsiveness/chromemobile.PNG)
+
+### Edge Dev Tools Tablet
+
+![Edge Dev Tools Main Tablet](documentation/responsiveness/edgemainmobile.PNG)
+
+### Edge Dev Tools main
+
+![Edge Dev Tools Main Tablet](documentation/responsiveness/edgemain.PNG)
+
+### Edge Dev Tools Mobile
+
+![Edge Dev Tools Main Mobile](documentation/responsiveness/edgenarrow.PNG)
