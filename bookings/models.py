@@ -27,12 +27,14 @@ TREATMENTS = (
     (8, 'Wrinkle softening injections'),
 )
 
+
 # Booking model which will map to a database table
 class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=100, default="Your Name")
     email = models.EmailField()
-    phone = models.CharField(validators=[MaxLengthValidator(15), MinLengthValidator(10)])
+    phone = models.CharField(
+        validators=[MaxLengthValidator(15), MinLengthValidator(10)])
     treatment = models.IntegerField(choices=TREATMENTS)
     date = models.DateField()
     time = models.IntegerField(choices=TIME_SLOTS)

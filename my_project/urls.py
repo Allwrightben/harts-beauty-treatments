@@ -9,7 +9,7 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
-    path("", include("treatments.urls"), name="treatments-urls"),  
+    path("", include("treatments.urls"), name="treatments-urls"),
 ]
 
 handler404 = 'my_project.views.handler404'
